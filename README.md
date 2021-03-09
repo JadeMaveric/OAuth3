@@ -1,4 +1,4 @@
-[![Run on Repl.it](https://repl.it/badge/github/kem0o/neonitev2)](https://repl.it/github/kem0o/neonitev2)
+[![Run on Repl.it](https://repl.it/badge/github/kem0o/neonitev2)](https://repl.it/github/JadeMaveric/OAuth3)
 
 OAuth has grown to be indespensible in today's web ecosystem. And there's tons of libraries out there to help you (very easily) use the most providers. But I wasn't satisfied with just using those libraries. I wanted to know what made the whole system tick.
 This surprisingly harder than I expected it to be. And it's not because it's difficult, but rather because there seems to be a stigma that it is. And as a consequence most tutorials just show how to add OAuth using 3rd party libraries.
