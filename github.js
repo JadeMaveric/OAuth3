@@ -22,7 +22,7 @@ async function getGithubUser (access_token) {
   return data
 }
 
-export async function getAccessToken (client_id, client_secret, code) {
+async function getAccessToken (client_id, client_secret, code) {
   const res = await fetch('https://github.com/login/oauth/access_token', {
     method: 'POST',
     headers: {
@@ -45,13 +45,13 @@ github.get('/callback', async (req, res) => {
   const githubData = await getGithubUser(token)
 
   if(githubData) {
-    req.session.service = 'github'
+    req.session.provider = 'github'
     req.session.id = githubData.id
     req.session.token = token
     req.session.avatar_url = githubData.avatar_url
     req.session.name = githubData.name
     req.session.email = githubData.email
-    res.redirect('/admin')
+    res.redirect('/')
   } else {
     console.log("Error: No githubData found")
     res.send("Error: No githubData found")
